@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndustrialForge - Advanced Manufacturing Solutions</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-cogs"></i>
+                <span>IndustrialForge</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-cogs me-2"></i>
+                <span class="brand-text">IndustrialForge</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technology">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-quote" href="#quote">Get Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <video autoplay muted loop class="hero-video">
+                <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-award me-2"></i>
+                        Industry Leader Since 1995
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Advanced</span>
+                        <span class="title-line highlight">Manufacturing</span>
+                        <span class="title-line">Solutions</span>
+                    </h1>
+                    <p class="hero-description">
+                        Pioneering the future of manufacturing with cutting-edge technology, 
+                        precision engineering, and sustainable practices across automotive, 
+                        electronics, and textile industries.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="25">0</div>
+                            <div class="stat-label">Years</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Countries</div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#services" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket me-2"></i>Explore Services
+                        </a>
+                        <a href="#portfolio" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-play me-2"></i>View Portfolio
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-visual">
+                    <div class="hero-image-container">
+                        <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Manufacturing" class="hero-image">
+                        <div class="floating-elements">
+                            <div class="floating-card" data-aos="fade-up" data-aos-delay="100">
+                                <i class="fas fa-industry"></i>
+                                <span>Smart Factory</span>
+                            </div>
+                            <div class="floating-card" data-aos="fade-up" data-aos-delay="200">
+                                <i class="fas fa-robot"></i>
+                                <span>AI Powered</span>
+                            </div>
+                            <div class="floating-card" data-aos="fade-up" data-aos-delay="300">
+                                <i class="fas fa-leaf"></i>
+                                <span>Eco-Friendly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="about-content">
+                        <div class="section-badge">About Us</div>
+                        <h2 class="section-title">
+                            Transforming Industries Through 
+                            <span class="highlight">Innovation</span>
+                        </h2>
+                        <p class="section-description">
+                            For over 25 years, IndustrialForge has been at the forefront of manufacturing 
+                            excellence, delivering precision-engineered solutions that drive industry transformation.
+                        </p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>ISO 9001:2015 Certified</h5>
+                                    <p>Maintaining the highest quality standards in all our processes</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Sustainable Manufacturing</h5>
+                                    <p>Committed to environmental responsibility and green practices</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Global Supply Chain</h5>
+                                    <p>Worldwide network ensuring reliable delivery and support</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-primary btn-lg mt-4">
+                            <i class="fas fa-arrow-right me-2"></i>Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-visual">
+                        <div class="image-grid">
+                            <div class="grid-item large">
+                                <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Manufacturing Process">
+                            </div>
+                            <div class="grid-item">
+                                <img src="https://images.pexels.com/photos/257775/pexels-photo-257775.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Quality Control">
+                            </div>
+                            <div class="grid-item">
+                                <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Innovation">
+                            </div>
+                        </div>
+                        <div class="experience-badge">
+                            <div class="badge-content">
+                                <span class="badge-number">25+</span>
+                                <span class="badge-text">Years of Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <div class="section-badge">Our Services</div>
+                    <h2 class="section-title">
+                        Comprehensive <span class="highlight">Manufacturing</span> Solutions
+                    </h2>
+                    <p class="section-description">
+                        From concept to delivery, we provide end-to-end manufacturing services 
+                        across multiple industries with unmatched precision and quality.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="automotive">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>Automotive Manufacturing</h3>
+                    </div>
+                    <div class="service-content">
+                        <p>Precision automotive components and systems with advanced safety standards and quality control.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-cog me-2"></i>Engine Components</li>
+                            <li><i class="fas fa-shield-alt me-2"></i>Safety Systems</li>
+                            <li><i class="fas fa-car-side me-2"></i>Body Parts</li>
+                            <li><i class="fas fa-microchip me-2"></i>Electronic Systems</li>
+                        </ul>
+                        <div class="service-stats">
+                            <div class="stat">
+                                <span class="stat-value">200+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">99.8%</span>
+                                <span class="stat-label">Quality Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="btn btn-outline-primary">Get Quote</a>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="electronics">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Electronics Manufacturing</h3>
+                    </div>
+                    <div class="service-content">
+                        <p>Advanced electronic components and devices with cutting-edge technology and precision assembly.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-circuit-board me-2"></i>PCB Assembly</li>
+                            <li><i class="fas fa-mobile-alt me-2"></i>Consumer Electronics</li>
+                            <li><i class="fas fa-industry me-2"></i>Industrial Equipment</li>
+                            <li><i class="fas fa-wifi me-2"></i>IoT Devices</li>
+                        </ul>
+                        <div class="service-stats">
+                            <div class="stat">
+                                <span class="stat-value">150+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">99.9%</span>
+                                <span class="stat-label">Quality Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="btn btn-outline-primary">Get Quote</a>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="textile">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Textile Manufacturing</h3>
+                    </div>
+                    <div class="service-content">
+                        <p>High-quality fabrics and apparel with sustainable practices and innovative design solutions.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-leaf me-2"></i>Sustainable Fabrics</li>
+                            <li><i class="fas fa-tshirt me-2"></i>Apparel Production</li>
+                            <li><i class="fas fa-industry me-2"></i>Technical Textiles</li>
+                            <li><i class="fas fa-palette me-2"></i>Custom Designs</li>
+                        </ul>
+                        <div class="service-stats">
+                            <div class="stat">
+                                <span class="stat-value">300+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">99.5%</span>
+                                <span class="stat-label">Quality Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="btn btn-outline-primary">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <div class="section-badge">Portfolio</div>
+                    <h2 class="section-title">
+                        Our <span class="highlight">Success</span> Stories
+                    </h2>
+                    <p class="section-description">
+                        Explore our portfolio of successful projects across various industries, 
+                        showcasing our expertise and commitment to excellence.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="automotive">Automotive</button>
+                <button class="filter-btn" data-filter="electronics">Electronics</button>
+                <button class="filter-btn" data-filter="textile">Textile</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="automotive">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Automotive Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h4>Electric Vehicle Components</h4>
+                                <p>Advanced battery housing and cooling systems</p>
+                                <a href="#" class="btn btn-light btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="electronics">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Electronics Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h4>Smart Home Devices</h4>
+                                <p>IoT-enabled home automation systems</p>
+                                <a href="#" class="btn btn-light btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="textile">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/1148957/pexels-photo-1148957.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Textile Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h4>Sustainable Fashion Line</h4>
+                                <p>Eco-friendly apparel manufacturing</p>
+                                <a href="#" class="btn btn-light btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="automotive">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Automotive Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h4>Precision Engine Parts</h4>
+                                <p>High-performance automotive components</p>
+                                <a href="#" class="btn btn-light btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="electronics">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Electronics Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h4>Medical Devices</h4>
+                                <p>Precision medical equipment manufacturing</p>
+                                <a href="#" class="btn btn-light btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="textile">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/1148957/pexels-photo-1148957.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Textile Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h4>Technical Textiles</h4>
+                                <p>Industrial-grade fabric solutions</p>
+                                <a href="#" class="btn btn-light btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="tech-content">
+                        <div class="section-badge">Technology</div>
+                        <h2 class="section-title">
+                            Powered by <span class="highlight">Advanced</span> Technology
+                        </h2>
+                        <p class="section-description">
+                            We leverage cutting-edge technology and innovative processes to deliver 
+                            superior manufacturing solutions that exceed industry standards.
+                        </p>
+                        
+                        <div class="tech-features">
+                            <div class="tech-feature">
+                                <div class="tech-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="tech-info">
+                                    <h5>AI & Machine Learning</h5>
+                                    <p>Predictive maintenance and quality optimization</p>
+                                </div>
+                            </div>
+                            <div class="tech-feature">
+                                <div class="tech-icon">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <div class="tech-info">
+                                    <h5>3D Printing & Prototyping</h5>
+                                    <p>Rapid prototyping and custom manufacturing</p>
+                                </div>
+                            </div>
+                            <div class="tech-feature">
+                                <div class="tech-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <div class="tech-info">
+                                    <h5>IoT Integration</h5>
+                                    <p>Smart factory connectivity and monitoring</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tech-visual">
+                        <div class="tech-dashboard">
+                            <div class="dashboard-header">
+                                <h4>Manufacturing Dashboard</h4>
+                                <div class="status-indicator online"></div>
+                            </div>
+                            <div class="dashboard-content">
+                                <div class="metric-card">
+                                    <div class="metric-icon">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                    </div>
+                                    <div class="metric-info">
+                                        <span class="metric-value">98.5%</span>
+                                        <span class="metric-label">Efficiency</span>
+                                    </div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-icon">
+                                        <i class="fas fa-shield-check"></i>
+                                    </div>
+                                    <div class="metric-info">
+                                        <span class="metric-value">99.9%</span>
+                                        <span class="metric-label">Quality</span>
+                                    </div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="metric-info">
+                                        <span class="metric-value">24/7</span>
+                                        <span class="metric-label">Monitoring</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <div class="section-badge">Contact Us</div>
+                    <h2 class="section-title">
+                        Let's Build Something <span class="highlight">Amazing</span> Together
+                    </h2>
+                    <p class="section-description">
+                        Ready to transform your manufacturing needs? Get in touch with our experts 
+                        for a consultation and discover how we can help your business grow.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" id="name" name="name" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" id="email" name="email" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-group">
+                                        <label for="service">Service Interest</label>
+                                        <select id="service" name="service" class="form-control" required>
+                                            <option value="">Select a service</option>
+                                            <option value="automotive">Automotive Manufacturing</option>
+                                            <option value="electronics">Electronics Manufacturing</option>
+                                            <option value="textile">Textile Manufacturing</option>
+                                            <option value="consultation">Consultation</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="form-group">
+                                    <label for="message">Project Details</label>
+                                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-4 mb-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5>Visit Our Facility</h5>
+                        <p>456 Industrial Boulevard<br>Manufacturing District<br>Tech City, TC 12345</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5>Call Us</h5>
+                        <p>Main: +1 (555) 123-4567<br>Sales: +1 (555) 987-6543<br>Support: +1 (555) 456-7890</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>Email Us</h5>
+                        <p>info@industrialforge.com<br>sales@industrialforge.com<br>support@industrialforge.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <a href="#home" class="footer-logo">
+                            <i class="fas fa-cogs me-2"></i>
+                            IndustrialForge
+                        </a>
+                        <p class="footer-description">
+                            Leading the future of manufacturing with innovative solutions, 
+                            precision engineering, and sustainable practices.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Automotive</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Textile</a></li>
+                        <li><a href="#">Consulting</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">White Papers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright">
+                        &copy; 2024 IndustrialForge. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-certifications">
+                        <span class="certification">ISO 9001:2015</span>
+                        <span class="certification">ISO 14001</span>
+                        <span class="certification">OHSAS 18001</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div class="modal fade" id="quoteModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Request a Quote</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="quoteForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="quoteName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="quoteName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="quoteEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="quoteEmail" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="quoteCompany" class="form-label">Company</label>
+                                <input type="text" class="form-control" id="quoteCompany">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="quoteService" class="form-label">Service</label>
+                                <select class="form-control" id="quoteService" required>
+                                    <option value="">Select Service</option>
+                                    <option value="automotive">Automotive Manufacturing</option>
+                                    <option value="electronics">Electronics Manufacturing</option>
+                                    <option value="textile">Textile Manufacturing</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="quoteDetails" class="form-label">Project Details</label>
+                            <textarea class="form-control" id="quoteDetails" rows="4" required></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary">Submit Quote Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
